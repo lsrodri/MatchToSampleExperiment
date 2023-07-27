@@ -17,6 +17,8 @@ public class Cutout : MonoBehaviour
     public GameObject cylinder;
     public GameObject collisionCylinder;
 
+    public float offset = 0.6f;
+
     // Get the MeshRenderer component of the game object
     private MeshRenderer sphereMeshRenderer;
     private MeshRenderer cylinderMeshRenderer;
@@ -27,8 +29,6 @@ public class Cutout : MonoBehaviour
     public Canvas pauseCanvas;
 
     private Renderer textureRenderer;
-    //private Color sphereColor;
-    //private Color cylinderColor;
 
     void Start()
     {
@@ -37,10 +37,6 @@ public class Cutout : MonoBehaviour
         sphereMeshRenderer = sphere.GetComponent<MeshRenderer>();
         cylinderMeshRenderer = cylinder.GetComponent<MeshRenderer>();
         collisionCylinderMeshRenderer = collisionCylinder.GetComponent<MeshRenderer>();
-
-        // Getting material color for opacity dimming
-        //sphereColor = sphereMeshRenderer.material.color;
-        //cylinderColor = cylinderMeshRenderer.material.color;
     }
 
     void Update()
@@ -52,8 +48,9 @@ public class Cutout : MonoBehaviour
         Vector2 uvOffset = new Vector2(localPosition.x, localPosition.z) * textureSpeed;
 
         // Clamp the UV offset values to the range of -0.355 to 0.355
-        float clampedU = Mathf.Clamp(uvOffset.x, -0.355f, 0.355f);
-        float clampedV = Mathf.Clamp(uvOffset.y, -0.355f, 0.355f);
+        
+        float clampedU = Mathf.Clamp(uvOffset.x, -offset, offset);
+        float clampedV = Mathf.Clamp(uvOffset.y, -offset, offset);
         uvOffset = new Vector2(clampedU, clampedV);
 
         // Apply the UV offset to the texture renderer

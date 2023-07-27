@@ -12387,7 +12387,7 @@ MonoBehaviour:
   snapRightAction:
     actionPath: /actions/default/in/SnapTurnRight
     needsReinit: 0
-  runTimer: 1
+  runTimer: 0
   trialsBeforePause: 15
 --- !u!114 &560798318
 MonoBehaviour:
@@ -14852,6 +14852,7 @@ MonoBehaviour:
   sphere: {fileID: 1662108043}
   cylinder: {fileID: 1565604417}
   collisionCylinder: {fileID: 1894668757}
+  offset: 0.35
   promptCanvas: {fileID: 1853803576}
   pauseCanvas: {fileID: 1602877297}
 --- !u!65 &677672224
@@ -18091,6 +18092,7 @@ MonoBehaviour:
   sphere: {fileID: 1662108043}
   cylinder: {fileID: 1565604417}
   collisionCylinder: {fileID: 1894668757}
+  offset: 0.35
   promptCanvas: {fileID: 1853803576}
   pauseCanvas: {fileID: 1602877297}
 --- !u!65 &807459494
@@ -23811,6 +23813,7 @@ MonoBehaviour:
   sphere: {fileID: 1662108043}
   cylinder: {fileID: 1565604417}
   collisionCylinder: {fileID: 1894668757}
+  offset: 0.6
   promptCanvas: {fileID: 1853803576}
   pauseCanvas: {fileID: 1602877297}
 --- !u!65 &1058875795
@@ -41561,6 +41564,7 @@ MonoBehaviour:
   sphere: {fileID: 0}
   cylinder: {fileID: 0}
   collisionCylinder: {fileID: 0}
+  offset: 0.35
   promptCanvas: {fileID: 0}
   pauseCanvas: {fileID: 0}
 --- !u!64 &1866378753
