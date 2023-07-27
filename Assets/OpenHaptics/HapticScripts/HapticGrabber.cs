@@ -20,8 +20,9 @@ public class HapticGrabber : MonoBehaviour
 	private bool buttonStatus = false;			//!< Is the button currently pressed?
 	private GameObject touching = null;			//!< Reference to the object currently touched
 	private GameObject grabbing = null;			//!< Reference to the object currently grabbed
-	private FixedJoint joint = null;			//!< The Unity physics joint created between the stylus and the object being grabbed.
+	private FixedJoint joint = null;            //!< The Unity physics joint created between the stylus and the object being grabbed.
 
+	private Quaternion initialRotation;
 
 	//! Automatically called for initialization
 	void Start () 
@@ -45,6 +46,16 @@ public class HapticGrabber : MonoBehaviour
 
 		if (DisableUnityCollisionsWithTouchableObjects)
 			disableUnityCollisions();
+
+		// Saving the initial rotation to prevent roll rotation on Late update
+		initialRotation = transform.localRotation;
+	}
+
+	private void LateUpdate()
+	{
+		// Preventing roll rotation so that the children can be arbitrarily changed to positions that make the collision look correct as OpenHaptics has a single point collision that makes half the sphere dive into another game object
+		Quaternion newRotation = Quaternion.Euler(transform.localEulerAngles.x, transform.localEulerAngles.y, initialRotation.eulerAngles.z);
+		transform.localRotation = newRotation;
 	}
 
 	void disableUnityCollisions()

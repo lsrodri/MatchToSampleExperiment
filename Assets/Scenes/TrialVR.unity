@@ -10196,6 +10196,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4563738496474676, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563738496474676, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.251
+      objectReference: {fileID: 0}
     - target: {fileID: 4583424822498384, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -10227,6 +10235,18 @@ PrefabInstance:
     - target: {fileID: 4583424822498384, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803176974232862, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803176974232862, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803176974232862, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 114312932697678990, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
       propertyPath: connect_On_Start
@@ -14846,13 +14866,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2059247419}
   textureSpeed: 1
-  holeTexture: {fileID: 2800000, guid: 8c0d8d121bce2934285c19103d1b7a23, type: 3}
+  holeTexture: {fileID: 2800000, guid: 51d499429c1760d448dfee95d811373d, type: 3}
   plainTexture: {fileID: 2800000, guid: 52b0fdca1a2b3384f88f187ba7fa4adb, type: 3}
   hideProbe: 1
   sphere: {fileID: 1662108043}
   cylinder: {fileID: 1565604417}
   collisionCylinder: {fileID: 1894668757}
-  offset: 0.35
+  offset: 0.6
   promptCanvas: {fileID: 1853803576}
   pauseCanvas: {fileID: 1602877297}
 --- !u!65 &677672224
@@ -18086,13 +18106,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2059247419}
   textureSpeed: 1
-  holeTexture: {fileID: 2800000, guid: 8c0d8d121bce2934285c19103d1b7a23, type: 3}
+  holeTexture: {fileID: 2800000, guid: 51d499429c1760d448dfee95d811373d, type: 3}
   plainTexture: {fileID: 2800000, guid: 52b0fdca1a2b3384f88f187ba7fa4adb, type: 3}
   hideProbe: 1
   sphere: {fileID: 1662108043}
   cylinder: {fileID: 1565604417}
   collisionCylinder: {fileID: 1894668757}
-  offset: 0.35
+  offset: 0.6
   promptCanvas: {fileID: 1853803576}
   pauseCanvas: {fileID: 1602877297}
 --- !u!65 &807459494
@@ -23807,7 +23827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2059247419}
   textureSpeed: 1
-  holeTexture: {fileID: 2800000, guid: 8c0d8d121bce2934285c19103d1b7a23, type: 3}
+  holeTexture: {fileID: 2800000, guid: 51d499429c1760d448dfee95d811373d, type: 3}
   plainTexture: {fileID: 2800000, guid: 52b0fdca1a2b3384f88f187ba7fa4adb, type: 3}
   hideProbe: 1
   sphere: {fileID: 1662108043}
