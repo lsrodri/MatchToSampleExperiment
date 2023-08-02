@@ -12407,7 +12407,7 @@ MonoBehaviour:
   snapRightAction:
     actionPath: /actions/default/in/SnapTurnRight
     needsReinit: 0
-  runTimer: 0
+  runTimer: 1
   trialsBeforePause: 15
 --- !u!114 &560798318
 MonoBehaviour:
@@ -14549,8 +14549,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663502711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27, y: -0.84, z: 0.508}
-  m_LocalScale: {x: 1.01, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 0.41, y: -0.84, z: 0.39}
+  m_LocalScale: {x: 1.0481906, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
