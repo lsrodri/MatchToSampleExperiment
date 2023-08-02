@@ -10258,7 +10258,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4748745285034377737, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
       propertyPath: m_Radius
-      value: 0.1
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748745285034377737, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_Center.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748745285034377737, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cdb4dbd1f8f22a4a9a363f1a23b8217, type: 3}
